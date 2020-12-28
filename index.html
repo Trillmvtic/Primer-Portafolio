@@ -19,33 +19,33 @@
 
     <!--Barra de Navegación-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="logo navbar-brand" href="#">VC</a>
+        <a class="logo navbar-brand" href="#inicio">VC</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Sobre Mí</a>
+              <a class="nav-link text-dark" href="#sobre_mi">Sobre Mí</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Experiencia</a>
+              <a class="nav-link text-dark" href="#experiencia">Experiencia</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-dark" href="#">Trabajos</a>
+                <a class="nav-link text-dark" href="#trabajos">Trabajos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-dark" href="#">Contacto</a>
+                <a class="nav-link text-dark" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
       </nav>
 
     <!-- Sección Principal -->
-    <header class="header_section header_section_img" id="inicio">
+    <header class="header_section header_section_img py-0" id="inicio">
         <div class="container text-center header__div">
             <h2 class="font-weight-lighter text-white display-4 header__text">YO SOY</h2>
             <hr class="bg-white header__line">
@@ -54,7 +54,7 @@
     </header>
 
     <!-- Sección Descripción -->
-    <section class="mx-5 mt-4">
+    <section class="mx-5 mt-4 d-none d-md-block" id="sobre_mi">
         <div>
             <h4 class="text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</h4>
             <hr class="divisor__line bg-white text-center">
@@ -70,11 +70,11 @@
     </section>
 
     <!-- Sección Experiencia -->
-    <section class="seccion__experiencia mx-5 mt-4" id="experiencia">
+    <section class="seccion__experiencia mx-5 mt-4 display" id="experiencia">
         <div>
-            <h3 class="text-white text-center">
+            <h2 class="text-white text-center font-weight-bolder">
             MI EXPERIENCIA
-            </h3>
+            </h2>
             <hr class="divisor__line bg-white text-center">
         </div>
         <div class="row mt-5">
@@ -98,7 +98,7 @@
     <!--Sección Trabajos-->
     <section class="section__trabajos container-fluid" id="trabajos">
         <div class="mt-5">
-            <h1 class="display-6 font-weight-bold text-center text-uppercase text-white pt-5 mt-2">mis últimos trabajos</h1>
+            <h2 class="display-6 font-weight-bold text-center text-uppercase text-white pt-5 mt-2">mis últimos trabajos</h2>
             <hr class="separador__trabajos bg-white">
         </div>
         <div class="container">
@@ -161,23 +161,24 @@
         </div>
     </section>
 
+    <!--Sección Contacto-->
+    <div class="typeform-widget" data-url="https://form.typeform.com/to/ciBwlJEv?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+
     <!--Footer-->
     <footer class="footer container-fluid text-center text-white py-5 bg-white">
         <div class="row align-items-center">
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <h3 class="font-weight-bold text-uppercase mt-2 text-dark">Victor</h3>
+                <h3 class="footer__name font-weight-bold text-uppercase mt-2 text-dark">Victor Cáceres</h3>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 my-2 text-dark">
-                <i class="fab fa-github-square fa-3x mx-2" data-toggle="tooltip" data-placement="top" title="GitHub"></i>
-                <i class="fab fa-linkedin fa-3x mx-2" data-toggle="tooltip" data-placement="right" title="LinkedIn"></i>
-                <i class="fab fa-twitter-square fa-3x mx-2" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i>
-                <i class="fab fa-facebook-square fa-3x mx-2" data-toggle="tooltip" data-placement="left" title="Facebook"></i>
+                <a class="fab fa-github-square fa-3x mx-2" data-toggle="tooltip" data-placement="top" title="GitHub" href="www.github.com"></a>
+                <a class="fab fa-linkedin fa-3x mx-2" data-toggle="tooltip" data-placement="right" title="LinkedIn" href="www.linkedin.com"></a>
+                <a class="fab fa-twitter-square fa-3x mx-2" data-toggle="tooltip" data-placement="bottom" title="Twitter" href="www.twitter.com"></a>
+                <a class="fab fa-facebook-square fa-3x mx-2" data-toggle="tooltip" data-placement="left" title="Facebook" href="www.facebook.com"></a>
             </div>
         </div>
     </footer>
 
-    
-               
     <!--Librerias-->
     <!--jQuery 3.5.1-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
