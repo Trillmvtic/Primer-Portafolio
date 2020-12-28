@@ -24,34 +24,29 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="navbar-nav ml-auto">
-            <a class="nav-link nav-item text-dark" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
-                   
-            <a class="nav-link nav-item text-dark" href="#sobre_mi">Sobre Mí</a>
-                    
-            <a class="nav-link nav-item text-dark" href="#experiencia">Experiencia</a>
-                    
-            <a class="nav-link nav-item text-dark" href="#trabajos">Trabajos</a>
-                    
-            <a class="nav-link nav-item text-dark" href="#contacto">Contacto</a>
-        
-        </div>
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link nav-item text-dark" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-link nav-item text-dark" href="#sobre_mi">Sobre Mí</a>
+                <a class="nav-link nav-item text-dark" href="#experiencia">Experiencia</a>
+                <a class="nav-link nav-item text-dark" href="#trabajos">Trabajos</a>
+                <a class="nav-link nav-item text-dark" href="#contacto">Contacto</a>
+            </div>
         </div>
       </nav>
 
     <!-- Sección Principal -->
-    <header class="header_section header_section_img py-5" id="inicio">
+    <header class="header_section header_section_img py-5 my-5" id="inicio">
         <div class="container text-center header__div">
             <h2 class="font-weight-lighter text-white display-4 mt-5 header__text">YO SOY</h2>
             <hr class="bg-white header__line">
-            <h1 class="font-weight-bold text-white display-4 mt-5 header__text_2">VICTOR</h1>
+            <h1 class="font-weight-bold text-white display-4 mt-5 header__text_2">VICTOR C.</h1>
         </div>
     </header>
 
     <!-- Sección Descripción -->
-    <section class="mx-5 pt-5 d-none d-md-block" id="sobre_mi">
+    <section class="mx-5 my-5 py-5 d-none d-md-block" id="sobre_mi">
         <div>
-            <h4 class="text-white text-center my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</h4>
+            <h4 class="text-white text-center my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</h4>
             <hr class="divisor__line bg-white text-center">
         </div>
         <div class="row pt-5 mx-5">
@@ -77,21 +72,18 @@
                 <i class="fab fa-css3 fa-10x section_icon_color" data-toggle="popover" title="Analista QA"></i>
                 <p class="font-weight-bolder mt-2 my-0">Analista QA</p>
                 <p class="font-weight-lighter pt-0">2016 - 2019</p>
-
             </article>
 
             <article class="col-xs-12 col-md-6 col-lg-6 col-xl-6 text-left text-center text-white">
                 <i class="fas fa-file-code fa-10x" data-toggle="popover" title="Dev Front-End"></i>
                 <p class="font-weight-bolder mt-2 my-0">Desarrollador Front-End</p>
                 <p class="font-weight-lighter pt-0 ">2020 - 2021</p>
-
             </article>
-
         </div>
     </section>
 
     <!--Sección Trabajos-->
-    <section class="section__trabajos container-fluid" id="trabajos">
+    <section class="section__trabajos container-fluid my-5 py-5" id="trabajos">
         <div class="mt-5">
             <h2 class="display-6 font-weight-bold text-center text-uppercase text-white pt-5 mt-2">mis últimos trabajos</h2>
             <hr class="separador__trabajos bg-white">
@@ -108,8 +100,8 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 my-3">
-                    <div class="card">
-                        <img src="assets/img/iguana_page.png" class="card-img-top" alt="meet_coffee">
+                    <div class="card" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        <img src="assets/img/iguana_page.png" class="card-img-top" alt="iguana_page" data-toggle="tooltip" data-placement="top" title="Clic para ver">
                         <div class="card-body">
                           <h5 class="card-title">Iguana Page</h5>
                           <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
@@ -117,8 +109,8 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 my-3">
-                    <div class="card">
-                        <img src="assets/img/suricata.png" class="card-img-top" alt="meet_coffee">
+                    <div class="card" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        <img src="assets/img/suricata.png" class="card-img-top" alt="suricata" data-toggle="tooltip" data-placement="top" title="Clic para ver">
                         <div class="card-body">
                           <h5 class="card-title">Suricata</h5>
                           <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
@@ -126,8 +118,8 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 my-3">
-                    <div class="card">
-                        <img src="assets/img/cuppon.png" class="card-img-top" alt="meet_coffee">
+                    <div class="card" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        <img src="assets/img/cuppon.png" class="card-img-top" alt="cuppon" data-toggle="tooltip" data-placement="top" title="Clic para ver">
                         <div class="card-body">
                           <h5 class="card-title">Cuppon</h5>
                           <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
@@ -135,8 +127,8 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 my-3">
-                    <div class="card">
-                        <img src="assets/img/ricomida.png" class="card-img-top" alt="meet_coffee">
+                    <div class="card" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        <img src="assets/img/ricomida.png" class="card-img-top" alt="ricomida" data-toggle="tooltip" data-placement="top" title="Clic para ver">
                         <div class="card-body">
                           <h5 class="card-title">Ricomida</h5>
                           <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
@@ -144,8 +136,8 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 my-3">
-                    <div class="card">
-                        <img src="assets/img/dmark.png" class="card-img-top" alt="meet_coffee">
+                    <div class="card" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        <img src="assets/img/dmark.png" class="card-img-top" alt="dmark" data-toggle="tooltip" data-placement="top" title="Clic para ver">
                         <div class="card-body">
                           <h5 class="card-title">DMark</h5>
                           <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
@@ -157,10 +149,12 @@
     </section>
 
     <!--Sección Contacto-->
-    <div class="typeform-widget my-5" id="contacto" data-url="https://form.typeform.com/to/ciBwlJEv?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+    <div class="container-fluid" id="contacto">
+        <div class="typeform-widget my-5 py-5" data-url="https://form.typeform.com/to/ciBwlJEv?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+    </div>
 
     <!--Footer-->
-    <footer class="footer container-fluid text-center text-white py-5 bg-white">
+    <footer class="footer container-fluid text-center text-white py-5 my-5 bg-white">
         <div class="row align-items-center">
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <h3 class="footer__name font-weight-bold text-uppercase mt-2 text-dark">Victor Cáceres</h3>
