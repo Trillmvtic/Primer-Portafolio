@@ -1,5 +1,11 @@
+:root{
+    --grayLow:#777777;
+
+}
+
 body{
-    font-family: 'Roboto' sans-serif; 
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(43, 44, 44); 
 }
 
 .logo{
@@ -7,18 +13,47 @@ body{
     font-size: 2rem;
 }
 
-.encabezado img{
-    width: 100%;
+.header_section_img {
+    background-image: url('../img/myself.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
 }
 
-.nombre-titulo{
+.header__line{
+    width: 300px;
+    height: 1pt;
+
+}
+.header__div{
+    padding-top: 500px;
+}
+
+.header__text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 35pt;
+    
+
+}
+
+.header__text_2{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 
 }
 
+.divisor__line{
+    width: 100px;
+}
+
+.separador__trabajos{
+    width: 100px;
+}
+
 .footer{
     width: 100%;
-    text-align: center;
+    
 
 }

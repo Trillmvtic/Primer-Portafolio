@@ -18,59 +18,166 @@
 <body>
 
     <!--Barra de Navegación-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand logo container-fluid" href="#">VC</a>
-        <!--Botón Hamburguesa-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="logo navbar-brand" href="#">VC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto text-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Sobre Mí</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Experiencia</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Trabajos</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-
-            </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Sobre Mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Experiencia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Trabajos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Contacto</a>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </nav>
 
     <!-- Sección Principal -->
-    <header class="encabezado">
-        <section>
-            <img src="assets/img/myself.jpeg" alt="Foto Personal">
-        </section>
+    <header class="header_section header_section_img" id="inicio">
+        <div class="container text-center header__div">
+            <h2 class="font-weight-lighter text-white display-4 header__text">YO SOY</h2>
+            <hr class="bg-white header__line">
+            <h1 class="font-weight-bold text-white display-4 mt-2 header__text_2">VICTOR</h1>
+        </div>
     </header>
-    <div>
-        <h1 class="nombre-titulo">Yo Soy Victor Cáceres</h1>
-    </div>
+
+    <!-- Sección Descripción -->
+    <section class="mx-5 mt-4">
+        <div>
+            <h4 class="text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</h4>
+            <hr class="divisor__line bg-white text-center">
+        </div>
+        <div class="row pt-3 mx-5">
+            <div class="col-md-6 col-lg-6 col-xl-6 text-left text-justify">
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa soluta consectetur numquam molestiae debitis consequatur ad laboriosam rem est. Numquam a doloremque nostrum placeat quas consequatur ut pariatur quae deserunt!</p>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-6 text-left text-justify">
+                <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem consectetur vitae eligendi placeat. Delectus, temporibus adipisci! At aspernatur totam necessitatibus saepe doloribus minus, exercitationem officiis dignissimos rem, assumenda mollitia neque!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Experiencia -->
+    <section class="seccion__experiencia mx-5 mt-4" id="experiencia">
+        <div>
+            <h3 class="text-white text-center">
+            MI EXPERIENCIA
+            </h3>
+            <hr class="divisor__line bg-white text-center">
+        </div>
+        <div class="row mt-5">
+            <article class="col-xs-12 col-md-6 col-lg-6 col-xl-6 text-left text-center text-white">
+                <i class="fab fa-css3 fa-10x section_icon_color" data-toggle="popover" title="analistaqa"></i>
+                <p class="font-weight-bolder mt-2 my-0">Analista QA</p>
+                <p class="font-weight-lighter pt-0">2016 - 2019</p>
+
+            </article>
+
+            <article class="col-xs-12 col-md-6 col-lg-6 col-xl-6 text-left text-center text-white">
+                <i class="fas fa-file-code fa-10x" data-toggle="popover" title="devfrontend"></i>
+                <p class="font-weight-bolder mt-2 my-0">Desarrollador Front-End</p>
+                <p class="font-weight-lighter pt-0 ">2020 - 2021</p>
+
+            </article>
+
+        </div>
+    </section>
+
+    <!--Sección Trabajos-->
+    <section class="section__trabajos container-fluid" id="trabajos">
+        <div class="mt-5">
+            <h1 class="display-6 font-weight-bold text-center text-uppercase text-white pt-5 mt-2">mis últimos trabajos</h1>
+            <hr class="separador__trabajos bg-white">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 my-3">
+                    <div class="card" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        <img src="assets/img/meet_coffee.png" class="card-img-top" alt="meet_coffee" data-toggle="tooltip" data-placement="top" title="Clic para ver">
+                        <div class="card-body">
+                          <h5 class="card-title">Meet&Coffe</h5>
+                          <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 my-3">
+                    <div class="card">
+                        <img src="assets/img/iguana_page.png" class="card-img-top" alt="meet_coffee">
+                        <div class="card-body">
+                          <h5 class="card-title">Iguana Page</h5>
+                          <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 my-3">
+                    <div class="card">
+                        <img src="assets/img/suricata.png" class="card-img-top" alt="meet_coffee">
+                        <div class="card-body">
+                          <h5 class="card-title">Suricata</h5>
+                          <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 my-3">
+                    <div class="card">
+                        <img src="assets/img/cuppon.png" class="card-img-top" alt="meet_coffee">
+                        <div class="card-body">
+                          <h5 class="card-title">Cuppon</h5>
+                          <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 my-3">
+                    <div class="card">
+                        <img src="assets/img/ricomida.png" class="card-img-top" alt="meet_coffee">
+                        <div class="card-body">
+                          <h5 class="card-title">Ricomida</h5>
+                          <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 my-3">
+                    <div class="card">
+                        <img src="assets/img/dmark.png" class="card-img-top" alt="meet_coffee">
+                        <div class="card-body">
+                          <h5 class="card-title">DMark</h5>
+                          <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--Footer-->
-    <footer class="footer text-white text-center bg-dark p-3">
-        <section class="icon-section">
-            <div class="container">
-                <h4 class="logo-letra text-align-left">Victor Cáceres</h4>
-                <div class="">
-                    <article><i class="fab fa-linkedin"></i></article>
-                    <article><i class="fab fa-facebook-f"></i></article>
-                    <article><i class="fab fa-instagram"></i></article>
-                </div>
-                
-
+    <footer class="footer container-fluid text-center text-white py-5 bg-white">
+        <div class="row align-items-center">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <h3 class="font-weight-bold text-uppercase mt-2 text-dark">Victor</h3>
             </div>
-        </section>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 my-2 text-dark">
+                <i class="fab fa-github-square fa-3x mx-2" data-toggle="tooltip" data-placement="top" title="GitHub"></i>
+                <i class="fab fa-linkedin fa-3x mx-2" data-toggle="tooltip" data-placement="right" title="LinkedIn"></i>
+                <i class="fab fa-twitter-square fa-3x mx-2" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i>
+                <i class="fab fa-facebook-square fa-3x mx-2" data-toggle="tooltip" data-placement="left" title="Facebook"></i>
+            </div>
+        </div>
     </footer>
 
-        
+    
+               
     <!--Librerias-->
     <!--jQuery 3.5.1-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -86,6 +193,7 @@
         </script>
     <!--Mi script-->
     <script src="assets/js/script.js"></script>
+
     
 </body>
 </html>
